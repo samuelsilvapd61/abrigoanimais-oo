@@ -13,33 +13,38 @@ while True:
         '4 - Cadastrar Pet',
         '5 - Exibir Pets',
         '6 - Apagar Pet',
-        '7 - Sair do Sistema')
+        '7 - Brincar com Pet',
+        '8 - Sair do Sistema')
 
     if tarefa == 1:
         # Cadastra o abrigo
-        lista_abrigos.append(Abrigo.cadastrar_abrigo(lista_abrigos))
+        Abrigo.cadastrar_abrigo(lista_abrigos)
 
     elif tarefa == 2:
         # Exibe todos os abrigos
         Abrigo.exibir_abrigos(lista_abrigos)
 
     elif tarefa == 3:
-        # Apaga o abrigo
-        pass
+        # Apaga o abrigo informado pelo usuário
+        Abrigo.apagar_abrigo(lista_abrigos)
 
     elif tarefa == 4:
         # Cadastra o pet
-        pass
+        Abrigo.cadastrar_pet(lista_abrigos)
 
     elif tarefa == 5:
         # Exibe todos os pets de um determinado abrigo
-        pass
+        Abrigo.exibir_pets(lista_abrigos)
 
     elif tarefa == 6:
         # Apaga o pet
-        pass
+        Abrigo.apagar_pet(lista_abrigos)
 
     elif tarefa == 7:
+        # Apaga o pet
+        Abrigo.bricar_pet(lista_abrigos)
+
+    elif tarefa == 8:
         # Sai do loop e deixa o programa finalizar naturalmente.
         print('Finalizando o Sistema...')
         break
